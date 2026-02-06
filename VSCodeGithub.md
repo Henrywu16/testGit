@@ -1,7 +1,5 @@
 # VS Code Git 圖形化操作手冊
 
-h
-
 ## 文件資訊
 
 | 項目         | 內容         |
@@ -619,5 +617,14 @@ git config --global core.autocrlf true
 ```
 
 ---
+
+# 先回到 main
+
+git checkout main
+
+# 用 revert 方式處理
+
+git revert --no-commit 28141421..HEAD
+git commit -m "回復到 initial commit"
 
 _文件結束_
